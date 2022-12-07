@@ -6,7 +6,10 @@
   </head>
   <body>
     <script>
-      var e = prompt('Enter text if u want to');
+      var e;
+      if(!e){
+      e = prompt('Enter text if u want to');
+      }
       if(!!e){
         localStorage.setItem('data',e);
       }
