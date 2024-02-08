@@ -1,0 +1,19 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <title>Random Math Quiz</title> </head> <body>
+<button id="e" onclick="quiz()">TURN ON JAVASCRIPT, OR THIS BUTTON IS USELESS</button>
+<script> 
+e.textContent='Retry';
+function randNum(max){ 
+return Math.floor(Math.random() * max); }
+var random1 = randNum(100);
+var random2 = randNum(100);
+var Quiz;
+function quiz(){
+Quiz = prompt('what is ' + random1 + ' + ' + random2 + '?');
+
+if(Quiz == random1 + random2){
+alert('Correct'); 
+} else {
+alert('Incorrect, the answer is ' + (random1 + random2));
+}  
+}
+</script> </body> </html>
