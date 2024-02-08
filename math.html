@@ -4,10 +4,12 @@
 e.textContent='Retry';
 function randNum(max){ 
 return Math.floor(Math.random() * max); }
-var random1 = randNum(100);
-var random2 = randNum(100);
+var random1;
+var random2;
 var Quiz;
 function quiz(){
+  random1 = randNum(100);
+  random2 = randNum(100);
 Quiz = prompt('what is ' + random1 + ' + ' + random2 + '?');
 
 if(Quiz == random1 + random2){
