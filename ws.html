@@ -1,5 +1,7 @@
+<button onclick="WebSocketTest()">Run</button>
 <script>
-  ws = new WebSocket('wss://nicecat99.github.io/tests/wstest');
+function WebSocketTest(){
+  ws = new WebSocket('wss://nicecat99.github.io/tests/ws');
   ws.onopen = function(){
     ws.send('test');
   };
@@ -11,4 +13,5 @@
   ws.onclose = function(){
     alert('closed');
   };
+}
 </script>
