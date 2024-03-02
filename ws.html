@@ -4,6 +4,7 @@ function WebSocketTest(){
   ws = new WebSocket('wss://nicecat99.github.io/tests/');
   ws.onopen = function(){
     ws.send('test');
+    alert('opened');
   };
 
   ws.onmessage = function(e){
