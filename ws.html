@@ -1,3 +1,14 @@
 <script>
-  alert("WebSocket" in window);
+  ws = new WebSocket('wss://nicecat99.github.io/tests/wstest');
+  ws.onopen = function(){
+    ws.send('test');
+  };
+
+  ws.onmessage = function(e){
+    alert(e.data);
+  };
+
+  ws.onclose = function(){
+    alert('closed');
+  };
 </script>
