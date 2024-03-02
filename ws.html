@@ -1,7 +1,7 @@
 <button onclick="WebSocketTest()">Run</button>
 <script>
 function WebSocketTest(){
-  ws = new WebSocket('wss://nicecat99.github.io/tests/');
+  ws = new WebSocket('ws://nicecat99.github.io/tests/');
   ws.onopen = function(){
     ws.send('test');
   };
